@@ -1,0 +1,3 @@
+Queda pendiente la pc 5 porque aun no esta habilitado el entregable.
+Aún así, parte del código visto en el informe después de la tercera regla normal en el apartado
+normalización viene lo que es el código e implementación de la  base de datos del proyecto.
