@@ -1,0 +1,62 @@
+======================================================
+     GUÍA RÁPIDA DE COMANDOS GIT - PROYECTO
+======================================================
+
+------------------------------------------------------
+1. FLUJO BÁSICO (Agregar, Confirmar y Subir)
+------------------------------------------------------
+* Ver el estado de tus archivos (útil en cualquier momento):
+  git status
+
+* Agregar todo el contenido modificado o nuevo:
+  git add .
+
+* Agregar un archivo específico:
+  git add nombre_del_archivo.txt
+
+* Agregar una carpeta con espacios en el nombre:
+  git add "Nombre de la carpeta/"
+
+* Confirmar los cambios guardando una versión:
+  git commit -m "Escribe aquí lo que modificaste"
+
+* Subir los cambios a la rama principal en GitHub:
+  git push origin main
+  (Si tu rama principal se llama master, usa: git push origin master)
+
+
+------------------------------------------------------
+2. RAMAS / BRANCHES (Versiones paralelas como v2.0)
+------------------------------------------------------
+* Crear una nueva rama y moverte a ella automáticamente:
+  git checkout -b v2.0
+
+* Cambiarte a una rama que ya existe (ej. regresar a main):
+  git checkout main
+
+* Subir una rama nueva a GitHub por primera vez:
+  git push -u origin v2.0
+
+* Subir actualizaciones a una rama que ya existe en GitHub:
+  git push origin v2.0
+
+
+------------------------------------------------------
+3. VACIAR UNA RAMA (Crear un lienzo en blanco)
+------------------------------------------------------
+* Borrar todos los archivos de la rama actual (OJO: verifica en qué rama estás primero):
+  git rm -rf .
+  
+  (Nota: Después de esto, recuerda hacer un 'git commit' para registrar el borrado, pegar tus nuevos archivos, hacer 'git add .' y hacer otro 'git commit').
+
+
+------------------------------------------------------
+4. ETIQUETAS / TAGS (Marcar versiones para Releases)
+------------------------------------------------------
+* Crear una etiqueta oficial en tu código actual:
+  git tag -a v1.0 -m "Lanzamiento oficial de la versión 1.0"
+
+* Subir esa etiqueta específica a GitHub (para que aparezca en Releases):
+  git push origin v1.0
+
+======================================================
